@@ -1,0 +1,351 @@
+{
+	"info": {
+		"_postman_id": "d67a309a-eff9-4207-adb5-4c5631794e42",
+		"name": "tutorial-webservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "persons",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "create pierrotws",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"pierrotws\",\n    \"firstname\": \"Pierre\",\n    \"lastname\": \"Sauvage\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/persons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"persons"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						},
+						{
+							"name": "create bruce",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"brucelee\",\n    \"firstname\": \"Bruce\",\n    \"lastname\": \"Lee\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/persons",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"persons"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tutos",
+			"item": [
+				{
+					"name": "create",
+					"item": [
+						{
+							"name": "create first",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"My webservice demo\",\n    \"description\": \"this is my first demo!\",\n    \"creator\": \"pierrotws\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						},
+						{
+							"name": "create second",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"My webservice demo2\",\n    \"description\": \"this is my second demo!\",\n    \"creator\": \"pierrotws\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						},
+						{
+							"name": "create other",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Karate One\",\n    \"description\": \"Whazaaah!\",\n    \"creator\": \"brucelee\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						},
+						{
+							"name": "create other 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Karate 2\",\n    \"description\": \"Whazaaa again!\",\n    \"creator\": \"brucelee\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									]
+								},
+								"description": "Create one tutorial"
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "get",
+					"item": [
+						{
+							"name": "get first",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials/cf42b9b0-3acf-11eb-90e6-21da80c57065",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials",
+										"cf42b9b0-3acf-11eb-90e6-21da80c57065"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "find",
+					"item": [
+						{
+							"name": "find with creator bruce",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials?creator=brucelee",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									],
+									"query": [
+										{
+											"key": "creator",
+											"value": "brucelee"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "find with creator pierrotws",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials?creator=pierrotws",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials"
+									],
+									"query": [
+										{
+											"key": "creator",
+											"value": "pierrotws"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "delete with id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/tutorials/cf42b9b0-3acf-11eb-90e6-21da80c57065",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"tutorials",
+										"cf42b9b0-3acf-11eb-90e6-21da80c57065"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
